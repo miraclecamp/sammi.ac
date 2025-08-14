@@ -1,0 +1,9 @@
+Saami as da Dars ko'rishni boshlaymiz Xar kuni kamida 2 soatdan dars qilinadi 
+
+O'rganiladigan narsalar birinchi html5 css3 javascript
+
+Html -> bazaviy malumotlar 
+
+Css3 -> Bu esa syle bo'ladi 
+
+javascript -> esa bu malumotlarni harakatga keltirib beradi 

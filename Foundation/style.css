@@ -1,0 +1,115 @@
+/* style da 
+argument { style } */
+/* css ni ulash 3 xil usul bilan bo'ladi 
+    1. link orqali 
+    2. style orqali html ni oziga 
+    3. to'g'ridan to'g'ri style berish bo'ladi 
+    
+    selector { 
+                property : value ; 
+                } 
+ */
+
+/* 
+    color : 
+    1. color-text usual   color:red; 
+    2. HEX                #FFFF
+    3. RGB                 color: rgb(255,255,255) 
+
+    Bacground-color : example ;  orqa fonni taminlab beradi. 
+    
+    text-align: center ; -> text ni joylashuvini taminlab beradi 
+    
+    font-weight: bold ; -> shriftlarni qalinligini hisoblab beradi 
+
+    font-style: italic ; -> yozuvlarini styli bilan ishlaydigan 
+
+    text-decoration: dotted: text ga decoratsiya quyadi masalan line , underline , yoki teks dagi malumotlarni ham olib tashlasa bo'ladi 
+
+    font-size : 1 rem ; font ni razmerini belgilash uchun kerak bo'ladi. 
+
+    border -> margin -> width -> height -> padding // shunday ko'rinishda joylanadi 
+
+    width -> eni 
+
+    height -> bo'yi 
+
+    tepa past o'ng chap 
+
+
+    btn: hover -> pseda class 
+
+    transition: all 0.5s ease; -> elementni o'zgarish vahti
+    
+    Display: block , inline , inline-block; -> displayni 3 ta turi mavjud. 
+
+    block elementlar div , h1 ... h6 , p ,  block elementlar yani bir qatorda faqat bir narsa qoyilsa block ishlatiladi 
+
+    inline -> a ;  text lar bilan ishlaganda ishlatiladi 
+
+    inline-block -> button;  text va block ishlatilganda ishlatiladi 
+
+    box-sizing: border-box; -> Bu yerda box kop hajmlari tashqariga chiqib ketmaydi 
+ 
+    display: grid, flex ;
+    
+        Display: grid; -> grid elementlar bilan ishlaydi.
+        Display: flex; -> flex elementlar bilan ishlaydi.
+
+        grid-template-columns: 1fr 1fr; -> grid elementlarining ustunlarini belgilaydi.
+        grid-template-rows: 1fr 1fr; -> grid elementlarining qatorlarini belgilaydi.
+        grid-gap: 10px; -> grid elementlarining orasidagi bo'shliqni belgilaydi.
+        flex-direction: row; -> flex elementlarining yo'nalishini belgilaydi.
+        justify-content: center; -> flex elementlarining gorizontal joylashuvini belgilaydi.
+        align-items: center; -> flex elementlarining vertikal joylashuvini belgilaydi.  
+        justify-content: space-between; -> flex elementlarining gorizontal joylashuvini 
+        grid-template-columns: repeat(3, 1fr); -> grid elementlarining ustunlarini takrorlash orqali belgilaydi.
+
+
+        Display postion bu yerda elementlarni joylashuvi bilan ishlaydi.
+
+    position: relative; -> elementning joylashuvini belgilaydi. Bu pazitsiya bergandan kegin o'ngga chapga surish mumkin  
+        masalan : top left right bottom kabi joylashuvlarni belgilash mumkin.
+    position: absolute; -> elementning joylashuvini aniq belgilaydi.
+        Karobkani turgan joyidan o'ngga chapga surish mumkin. body bo'yicha harakat qiladi. body ga nisbatan joylashadi.
+    position: fixed; -> elementning joylashuvini o'zgarishsiz belgilaydi.
+    position: sticky; -> elementning joylashuvini scroll bilan bog'liq holda belgilaydi.
+    position: static; -> elementning joylashuvini default holda belgilaydi.
+
+        
+*/
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+body {
+    margin: 10rem;
+    margin-top: 1rem;
+    font-family: "Courier New", Courier, monospace;
+    border: 1px solid black;
+    padding: 2rem;
+}
+.btn {
+    width: 10rem;
+    height: 2rem;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 5%;
+    color: black;
+    background-color: white;
+    transition: all 0.5s ease;
+}
+.btn:hover {
+    color: white;
+    background-color: gray;
+    border: 1 solid gray;
+}
